@@ -7,32 +7,38 @@
         text-decoration: none;
       }
       h1 {
+        font-family: 'Calibri';
+        font-style: normal;
+        font-size: 25px;
+        text-shadow: #f7f7f7;
       }
-      
+      label {
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 20px;
+        text-shadow: #f7f7f7;
+      }
+
       #myButton {
         width: 200px;
       }
 
       #fakeButton {
         width: 200px;
-
       }
-
-  
-
-
     </style>
   </head>
 
-  <body style="background-color:#bfd7e0">
+  <body style="background-color: #bfd7e0">
     <script src="popup.js"></script>
-    <img src="\icons\Chart.png" alt="Stock Chart">
-    <h1>Stock Lookup</h1>
+    <img src="\icons\Chart.png" alt="Stock Chart" />
+    <h1>Market Research Assistant</h1>
     <form id="myForm" action="" method="POST">
-      <label for="ticker">Ticker:</label><br />
+      <label for="ticker">Symbol:</label><br />
       <input type="text" id="ticker" name="ticker" /><br />
       <label for="submit"></label><br />
-      <input id='fakeButton' type="submit" value="Submit" />
+      <input id="fakeButton" type="submit" value="Submit" />
     </form>
     <button id="myButton" value="Clear">Clear</button>
   </body>
