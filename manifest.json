@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Test Extension",
-  "description": "Base Level Extension",
+  "name": "Stock Lookup",
+  "description": "Manage your stocks and perform research on your portfolio",
   "version": "1.0",
   "action": {
     "default_popup": "/popup/hello.html",

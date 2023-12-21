@@ -8,17 +8,32 @@
       }
       h1 {
       }
+      
+      #myButton {
+        width: 200px;
+      }
+
+      #fakeButton {
+        width: 200px;
+
+      }
+
+  
+
+
     </style>
   </head>
 
-  <body>
-    <h1>Stock Lookup</h1>
+  <body style="background-color:#bfd7e0">
     <script src="popup.js"></script>
-    <form id="myForm">
+    <img src="\icons\Chart.png" alt="Stock Chart">
+    <h1>Stock Lookup</h1>
+    <form id="myForm" action="" method="POST">
       <label for="ticker">Ticker:</label><br />
       <input type="text" id="ticker" name="ticker" /><br />
       <label for="submit"></label><br />
-      <input type="submit" /><br />
+      <input id='fakeButton' type="submit" value="Submit" />
     </form>
+    <button id="myButton" value="Clear">Clear</button>
   </body>
 </html>
