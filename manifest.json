@@ -4,7 +4,15 @@
   "description": "Base Level Extension",
   "version": "1.0",
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.jpg"
-  }
+    "default_popup": "/popup/hello.html",
+    "default_icon": {
+      "16": "icons/icon-16.jpg",
+      "48": "icons/icon-48.jpg",
+      "128": "icons/icon-128.jpg"
+    }
+  },
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "css": ["/scripts/background.css"] }
+  ],
+  "permissions": ["storage"]
 }
